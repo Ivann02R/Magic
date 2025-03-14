@@ -33,6 +33,8 @@ function mostrarImagen() {
         imagen.classList.add('tambaleando'); // Vuelve a agregar la clase tras un pequeño delay
     }, 10);
 
+    mostrarImagenYContar();
+
 
 
 }
