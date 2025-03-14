@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objeto aleatorio</title>
+    <link rel="stylesheet" href="estilos/styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <span class="title">The Commander Kart</span>
+        <div class="menu-container">
+            <button onclick="toggleMenu()">☰ Menú</button>
+            <div id="menu" class="menu">
+                <a href="index.html">Menu Principal</a>
+                <a href="paginas/objetos.html">Objetos</a>
+                <a href="paginas/reglas.html">Reglas</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <form>
+            <div class="form-wrapper">
+                <p>En que puesto vas?</p>
+                <select id="posicion">
+                    <option value="1">1º</option>
+                    <option value="2">2º</option>
+                    <option value="3">3º</option>
+                    <option value="4">4º</option>
+                </select>
+            </div>
+        </form>
+        <br><br>
+        <button class="dado" onclick="mostrarImagen()"></button>
+        <div id="imagen-container" style="display: none; margin-top: 20px;">
+            <img id="imagen" src="" alt="Imagen mostrada" width="200">
+        </div>
+        <div id="contador-container" style="margin-top: 20px; font-size: 20px;">Turno: <span id="contador">1</span></div>
+    </main>
+    <footer>
+        &copy;Wizards of the coast   &copy;Nintendo
+    </footer>
+</body>
+
+</html>

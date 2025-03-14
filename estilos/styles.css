@@ -1,0 +1,170 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.menu-container {
+    position: relative;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.menu-container button {
+    font-size: 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menu a {
+    display: block;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.menu a::before {
+    content: "• ";
+    color: black;
+}
+
+.menu a:hover {
+    background: #eee;
+}
+
+.menu-container:hover .menu {
+    display: block;
+}
+
+.title{
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    position: relative; 
+    padding: 10px 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+main {
+
+    justify-content: center;  /* Centra el contenido horizontalmente */
+    align-items: center;  /* Alinea el contenido al borde superior (debajo de la cabecera) */
+    flex-direction: column;   /* Alinea los elementos en columna */
+    padding-top: 20px;        /* Espacio entre la cabecera y el formulario */
+}
+
+form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+select {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.form-wrapper{
+    display: flex;
+    gap: 10px;
+}
+
+p {
+    margin: 0;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dado{
+    margin-top: 20px; /* Espacio entre el formulario y el botón */
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: transparent;  /* Asegura que el fondo del botón sea transparente */
+    background-image: url('../images/caja.png');  /* Establece la imagen de fondo */
+    background-size: contain;  /* Asegura que la imagen se ajuste dentro del botón */
+    background-repeat: no-repeat;  /* Evita que la imagen se repita */
+    border: none;  /* Elimina el borde del botón */
+    width: 80px;  /* Ajusta el ancho del botón según el tamaño de la imagen */
+    height: 80px;  /* Ajusta el alto del botón según el tamaño de la imagen */
+    animation: slide 1s ease-in-out infinite;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateY(0);  /* Comienza en la posición original */
+    }
+    50% {
+        transform: translateY(-10px);  /* Deslízate 10px hacia arriba */
+    }
+    100% {
+        transform: translateY(0);  /* Vuelve a la posición original */
+    }
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+    header {
+        font-size: 20px;
+        padding: 10px;
+    }
+    .title{
+        font-size: 24px;
+    }
+    
+    main {
+        padding: 10px;
+    }
+    
+    footer {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@keyframes tambalear {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(-5deg); }
+    75% { transform: rotate(5deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.tambaleando {
+    animation: tambalear 1s ease-in-out infinite;
+}

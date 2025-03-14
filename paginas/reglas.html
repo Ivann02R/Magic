@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reglas</title>
+    <link rel="stylesheet" href="../estilos/styles.css">
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        .wrapper-text{
+            background: white;
+            padding: 20px;
+            width: 60%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+            text-align: left;
+            line-height: 1.6;
+        }
+
+        main {
+            
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        main span {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <span class="title">The Commander kart</span>
+        <div class="menu-container">
+            <button onclick="toggleMenu()">☰ Menú</button>
+            <div id="menu" class="menu">
+                <a href="../index.html">Menu Principal</a>
+            <a href="objetos.html">Objetos</a>
+            <a href="reglas.html">Reglas</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="wrapper-text">
+        <span>★ A partir del turno 2 empieza a sacar objetos.</span>
+        <span>★ Cada jugador cuando empiece el turno, si hay 4 jugadores y empieza el jugador 1,  
+            se da la vuelta completa y vuelve a tocarle al jugador 1, se tira el dado.</span>
+        <span>★ Se definirán los puestos según la vida que tengamos, el que tenga más vida será el 1º y así sucesivamente.</span>
+        <span>★ Según tu clasificación te tocarán unos objetos u otros (para equilibrar).</span>
+        <span>★ Los objetos que te toquen en las cajas solo los puedes usar una vez (excepto que digan lo contrario)  
+            y en tu turno (exceptuando los plátanos, bombas y caparazones verdes y rojos).</span>
+        <span>★ Los objetos son una categoría nueva, estos cumplen la lógica de Mario Kart, por lo que no se pueden  
+            contrarrestar, copiar, robar, destruir o evitar con shroud (velo), hexproof (antimaleficio),  
+            indestructible o protección.</span>
+        <span>★ Para evitar efectos deberás usar los propios objetos que te toquen. Se pueden responder de otra manera,  
+            que no haya sido mencionada anteriormente, ya que funcionan a velocidad de conjuro en tu turno.</span>
+        <span>★ Los objetos triples significan que puedes usarlos hasta tres veces. El efecto es cada vez que  
+            se usa esa carta y disminuye en un uso cada vez que la uses.</span>
+        <span>★ Solo se puede tener un objeto a la vez. Cada vez que se tira el dado, si no has gastado el objeto,  
+            se reemplaza por uno nuevo.</span>
+        </div>
+    </main>
+    <footer>
+        &copy; 2025 Mi Página Web
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de objetos</title>
+    <link rel="stylesheet" href="../estilos/styles.css">
+    <script src="script.js" defer></script>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Contenedor de las imágenes */
+        .wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            /* 2 columnas */
+            grid-template-rows: repeat(7, auto);
+            /* 7 filas */
+            gap: 10px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+            margin-bottom: 32px;
+        }
+
+        /* Estilo para cada imagen */
+        .wrapper-img {
+            text-align: center;
+            justify-content: center;
+            display: flex;
+
+            img {
+                width: 60%;
+                height: auto;
+                display: block;
+                border-radius: 10px;
+                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <span class="title">The Commander kart</span>
+        <div class="menu-container">
+            <button onclick="toggleMenu()">☰ Menú</button>
+            <div id="menu" class="menu">
+                <a href="../index.html">Menu Principal</a>
+                <a href="objetos.html">Objetos</a>
+                <a href="reglas.html">Reglas</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="wrapper">
+            <!-- Generación automática de imágenes -->
+            <div class="wrapper-img"><img src="../images/1.png" alt="Imagen 1"></div>
+            <div class="wrapper-img"><img src="../images/2.png" alt="Imagen 2"></div>
+            <div class="wrapper-img"><img src="../images/3.png" alt="Imagen 3"></div>
+            <div class="wrapper-img"><img src="../images/4.png" alt="Imagen 4"></div>
+            <div class="wrapper-img"><img src="../images/5.png" alt="Imagen 5"></div>
+            <div class="wrapper-img"><img src="../images/6.png" alt="Imagen 6"></div>
+            <div class="wrapper-img"><img src="../images/7.png" alt="Imagen 7"></div>
+            <div class="wrapper-img"><img src="../images/8.png" alt="Imagen 8"></div>
+            <div class="wrapper-img"><img src="../images/9.png" alt="Imagen 9"></div>
+            <div class="wrapper-img"><img src="../images/10.png" alt="Imagen 10"></div>
+            <div class="wrapper-img"><img src="../images/11.png" alt="Imagen 11"></div>
+            <div class="wrapper-img"><img src="../images/12.png" alt="Imagen 12"></div>
+            <div class="wrapper-img"><img src="../images/13.png" alt="Imagen 13"></div>
+            <div class="wrapper-img"><img src="../images/14.png" alt="Imagen 14"></div>
+        </div>
+
+    </main>
+    <footer>
+        &copy; 2025 Mi Página Web
+    </footer>
+</body>
+
+</html>
