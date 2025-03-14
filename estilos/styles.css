@@ -166,5 +166,5 @@ footer {
 }
 
 .tambaleando {
-    animation: tambalear 1s ease-in-out infinite;
+    animation: tambalear 1s ease-in-out;
 }
