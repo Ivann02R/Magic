@@ -13,6 +13,7 @@ body {
     display: none;
     position: absolute;
     top: 100%;
+    width: 100px;
     right: 0;
     background: white;
     border: 1px solid #ccc;
@@ -34,6 +35,11 @@ body {
     text-decoration: none;
     color: black;
     font-size: 16px;
+
+    @media (max-width: 768px) {
+        padding: 8px 8px;
+
+}
 }
 
 .menu a::before {
@@ -53,6 +59,11 @@ body {
     font-size: 32px;
     font-weight: bold;
     color: black;
+
+    @media (max-width: 768px) {
+        font-size: 22px;
+
+}
 }
 
 
@@ -97,9 +108,13 @@ p {
 }
 
 button {
-    padding: 10px 20px;
+   
     font-size: 16px;
     cursor: pointer;
+
+    @media (min-width: 768px) {
+        padding: 10px 20px;
+    }
 }
 
 .dado{
@@ -166,5 +181,5 @@ footer {
 }
 
 .tambaleando {
-    animation: tambalear 1s ease-in-out infinite;
+    animation: tambalear 1s ease-in-out;
 }

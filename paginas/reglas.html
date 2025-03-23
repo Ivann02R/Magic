@@ -18,6 +18,7 @@
         .wrapper-text{
             background: white;
             padding: 20px;
+            margin-bottom: 30px;
             width: 60%;
             max-width: 600px;
             border-radius: 10px;
@@ -25,6 +26,15 @@
             text-align: left;
             line-height: 1.6;
         }
+
+        .wrapper-text img {
+    display: block;
+    width: 100%; /* Hace que la imagen tenga el mismo ancho que el contenedor */
+    max-width: 600px; /* Mantiene el ancho máximo de .wrapper-text */
+    margin-bottom: 20px;
+    border-radius: 10px; /* Opcional: si quieres que tenga bordes redondeados */
+}
+
 
         main {
             
@@ -59,6 +69,7 @@
 
     <main>
         <div class="wrapper-text">
+            <img src="../images/money.png">
         <span>★ A partir del turno 2 empieza a sacar objetos.</span>
         <span>★ Cada jugador cuando empiece el turno, si hay 4 jugadores y empieza el jugador 1,  
             se da la vuelta completa y vuelve a tocarle al jugador 1, se tira el dado.</span>
@@ -75,6 +86,7 @@
             se usa esa carta y disminuye en un uso cada vez que la uses.</span>
         <span>★ Solo se puede tener un objeto a la vez. Cada vez que se tira el dado, si no has gastado el objeto,  
             se reemplaza por uno nuevo.</span>
+           
         </div>
     </main>
     <footer>
